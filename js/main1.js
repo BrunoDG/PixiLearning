@@ -26,20 +26,44 @@ fillWindow(app);
 
 /*
 //Another way of loading the image or sprite inside Pixi
-// btw, this is the PIXI.js team's recommendation on how to load textures and sprites for the game
+//Btw, this is the PIXI.js team's recommendation on how to load textures and sprites for the game
 
 PIXI.loader
-    .add("img/cat.png")
+    .add("img/imgOne.png")
     .load(setup);
 
 function setup() {
     // this code will run when the loader has finished loading the image
     let sprite = new PIXI.Sprite(
-        PIXI.loader.resources["img/cat.png"].texture
+        PIXI.loader.resources["img/imgOne.png"].texture
     );
 }
 */
 
+/*
+//Loading several files at the same time
+PIXI.loader
+    .add("img/imgOne.png")
+    .add("img/imgTwo.png")
+    .add("img/imgThree.png")
+    .load(setup);
+*/
+
+/*
+//Also, loading several files at the same time, but this time within a list.
+//The best part of it is that it can be used with JSON.
+PIXI.loader
+    .add([
+        "img/imgOne.png",
+        "img/imgTwo.png",
+        "img/imgThree.png"
+    ])
+    .load(setup);
+*/
+
+PIXI.loader
+    .add("img/cat.png")
+    .load(setup);
 //Add the canvas that Pixi automatically created for you to the HTML document
 document.body.appendChild(app.view);
 
@@ -53,4 +77,16 @@ function fillWindow(app) {
     app.renderer.view.style.display = "block";
     app.renderer.autoResize = true;
     app.renderer.resize(window.innerWidth, window.innerHeight);
+}
+
+function setup() {
+    //This code will run when the loader has finished loading the image
+    
+    //Create the Sprite
+    let cat = new PIXI.Sprite(
+        PIXI.loader.resources["img/cat.png"].texture
+    );
+    
+    //Add the cat to the scene
+    app.stage.addChild(cat);
 }
