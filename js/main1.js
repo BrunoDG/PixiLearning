@@ -89,4 +89,11 @@ function setup() {
     
     //Add the cat to the scene
     app.stage.addChild(cat);
+    /*
+    //To remove a sprite from the screen
+    app.stage.removeChild(anySprite);
+
+    //Usually you can hide the sprite, or set it to visible
+    anySprite.visible = false;
+    */
 }
