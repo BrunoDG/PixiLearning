@@ -18,3 +18,60 @@ Let's be honest: It's for a job opportunity. And because I love to study new thi
 _Quick observation:_ You're using VSCode for development, right? It's the same as me. So, you should consider running this line on your terminal: `npm install @types/pixi.js --save-dev`. 
 
 **Why?** Because it's a complement and linter for Pixi.js and it will help you a lot. Easy as that. (as seen on https://www.html5gamedevs.com/topic/30187-visual-studio-code-intellisense-code-completion/) :)
+
+## TO-DO list:
+- [x] Introduction
+- [x] Setting up
+- [x] Installing Pixi
+- [x] Creating the stage and renderer
+- [x] Pixi sprites
+- [x] Loading images into the texture cache
+- [x] Displaying sprites
+- [x] Using Aliases
+- [x] A little more about loading things 
+    - [x] 1. Make a sprite from an ordinary JavaScript Image object or Canvas 
+    - [x] 2. Assigning a name to a loaded file 
+    - [x] 3. Monitoring load progress 
+    - [x] 4. More about Pixi's loader
+- [x] Positioning sprites
+- [x] Size and scale
+- [x] Rotation
+- [x] Make a sprite from a tileset sub-image
+- [x] Use Texture Alias
+- [x] Load the Texture Alias
+- [x] Create Sprites from loaded texture alias 
+- [x] Load the Blobs on the scene
+- [ ] Moving Sprites
+- [ ] Using velocity properties
+- [ ] Game states
+- [ ] Keyboard Movement
+- [ ] Grouping Sprites
+- [ ] Local and global positions
+- [ ] Using a ParticleContainer to group sprites
+- [ ] Pixi's Graphic Primitives
+- [ ] Rectangle
+- [ ] Circles
+- [ ] Ellipses
+- [ ] Rounded rectangles
+- [ ] Lines
+- [ ] Polygons
+- [ ] Displaying text
+- [ ] Collision detection
+- [ ] The hitTestRectangle function
+- [ ] Case study: Treasure Hunter
+- [ ] Initialize the game in the setup function 
+    - [ ] 1. Creating the game scenes 
+    - [ ] 2. Making the dungeon, door, explorer and treasure 
+    - [ ] 3. Making the blob monsters 
+    - [ ] 4. Making health bar 
+    - [ ] 5. Making message text
+- [ ] Playing the game
+- [ ] Moving the explorer 1. Containing movement
+- [ ] Moving the monsters
+- [ ] Checking for collisions
+- [ ] Reaching the exit door and ending game
+- [ ] More about sprites
+- [ ] Taking it further
+    - [ ] i.Hexi
+    - [ ] ii.BabylonJS
+- [ ] Supporting this project
