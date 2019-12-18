@@ -9,11 +9,11 @@ Why not both and join the cheese and the knife?
 
 ## Is this your first time programming with HTML5?
 
-Nope. This is one of many attempts to do something with HTML5. Although this might be my first "game" made with HTML5, I've tried to mess with Phaser before.
+Nope. This is one of many attempts to do something with HTML5. Although this might be my first "game" made with HTML5, I've tried to mess with Phaser and did my entire honours project for UERJ with three.JS before (so, somehow, I know how to use WebGL... _"on a basic level"_).
 
 ## Why Pixi.js?
 
-Let's be honest: It's for a job opportunity. And because I love to study new things while doing nothing because I hate being unproductive and I don't wanna get bored while doing nothing. So, while I'm doing nothing, why I can't study and learn something new? 
+Basically that's because I love to study new things while doing nothing because I hate being unproductive and I don't wanna get bored / depressed / upset with my extreme levels of procrastination while doing nothing. So, while I'm doing nothing on my free time, why can't Igit add study and learn something new? 
 
 _Quick observation:_ You're using VSCode for development, right? It's the same as me. So, you should consider running this line on your terminal: `npm install @types/pixi.js --save-dev`. 
 
