@@ -13,7 +13,7 @@ Nope. This is one of many attempts to do something with HTML5. Although this mig
 
 ## Why Pixi.js?
 
-Basically that's because I love to study new things while doing nothing because I hate being unproductive and I don't wanna get bored / depressed / upset with my extreme levels of procrastination while doing nothing. So, while I'm doing nothing on my free time, why can't Igit add study and learn something new? 
+Basically that's because I love to study new things while doing nothing because I hate being unproductive and I don't wanna get bored / depressed / upset with my extreme levels of procrastination while doing nothing. So, while I'm doing nothing on my free time, why can't I learn something new and add another skill, so I can express my ? 
 
 _Quick observation:_ You're using VSCode for development, right? It's the same as me. So, you should consider running this line on your terminal: `npm install @types/pixi.js --save-dev`. 
 
@@ -41,8 +41,8 @@ _Quick observation:_ You're using VSCode for development, right? It's the same a
 - [x] Load the Texture Alias
 - [x] Create Sprites from loaded texture alias 
 - [x] Load the Blobs on the scene
-- [ ] Moving Sprites
-- [ ] Using velocity properties
+- [x] Moving Sprites
+- [x] Using velocity properties
 - [ ] Game states
 - [ ] Keyboard Movement
 - [ ] Grouping Sprites

@@ -2,12 +2,13 @@
 let Application = PIXI.Application,
     loader = PIXI.loader,
     resources = PIXI.loader.resources,
-    Sprite = PIXI.Sprite;
+    Sprite = PIXI.Sprite,
+    cat;
 
 //Create a Pixi Application
 let app = new Application({
-    width: 256,
-    height: 256,
+    width: 512,
+    height: 512,
     antialias: true,
     transparent: false,
     resolution: 1
@@ -41,12 +42,14 @@ loader
 //This "setup" function will run when the image has loaded
 function setup() {
     //Create the cat sprite
-    let cat = new Sprite(resources["img/cat.png"].texture);
+    cat = new Sprite(resources["img/cat.png"].texture);
 
     //If I want to position the cat on other position at the
     //screen, I can position it like this:
     //cat.x = 96;
-    //cat.y = 96;
+    cat.y = 96;
+    cat.vx = 0;
+    cat.vy = 0;
     
     //or, like this:
     cat.position.set(96, 96);
@@ -63,14 +66,14 @@ function setup() {
     //cat.scale.set(0.5, 0.5);
 
     //I can spin the sprite with the rotation property:
-    cat.rotation = 0.5
+    //cat.rotation = 0.5
 
     //Additionally, I can change the sprite's rotation anchor like this:
     //cat.anchor.x = 0.5;
     //cat.anchor.y = 0.5;
 
     //Again, I can change the anchor like this as well:
-    cat.anchor.set(0.5, 0.5);
+    //cat.anchor.set(0.5, 0.5);
 
     //Also, I can change the sprite's pivot point with this function:
     //cat.pivot.set(32, 32);
@@ -83,7 +86,42 @@ function setup() {
     app.stage.addChild(cat);
 
     console.log("all files loaded succesfully");
+
+
+    /*We can use two ways of animating sprites: */
+    // 1)
+    //Start the game loop by adding the 'gameLoop' function to 
+    //Pixi's 'ticker' and provoking it with a 'delta' argument
+    app.ticker.add(delta => gameLoop(delta));
+
+    // 2)
+    //Calling the function on setup and then making the animation
+    //happen on the refresh of the screen (60 frames per second)
+    //this way, we don't need to use the 'ticker'.
+    //gameLoop()
 }
+
+//The Loop function (using delta)
+function gameLoop(delta) {
+    //Update the cat's velocity
+    cat.vx = 1;
+    cat.vy = 1;    
+    
+    //Apply the velocity values to the cat's 
+    //postition to make it move
+    cat.x += cat.vx;
+    cat.y += cat.vy;
+}
+
+//The Loop function (not using delta)
+/*function gameLoop() {
+    //Call this 'gameLoop' function on the next screen refresh
+    //(which happens 60 times per second)
+    requestAnimationFrame(gameLoop);
+
+    //Move the cat 1 pixel
+    cat.x += 1;
+}*/
 
 //Function to show the loading progress of the whole program
 //and, in addition to it, you can use it as a way to implement
