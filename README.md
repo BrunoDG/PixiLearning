@@ -43,8 +43,8 @@ _Quick observation:_ You're using VSCode for development, right? It's the same a
 - [x] Load the Blobs on the scene
 - [x] Moving Sprites
 - [x] Using velocity properties
-- [ ] Game states
-- [ ] Keyboard Movement
+- [x] Game states
+- [x] Keyboard Movement
 - [ ] Grouping Sprites
 - [ ] Local and global positions
 - [ ] Using a ParticleContainer to group sprites
