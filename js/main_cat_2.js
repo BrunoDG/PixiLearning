@@ -3,6 +3,7 @@ let Application = PIXI.Application,
     loader = PIXI.loader,
     resources = PIXI.loader.resources,
     Sprite = PIXI.Sprite,
+    animals = new PIXI.Container(),
     cat, state;
 
 //Create a Pixi Application
@@ -19,19 +20,37 @@ document.body.appendChild(app.view);
 
 //Loading an image and running the "setup" function when it's done
 loader
-    .add("img/cat.png") 
+    .add("img/animals.json") 
     .on("progress", loadProgressHandler) //This is a loader function to show how many files are loading
     .load(setup);
 
 function setup() {
-
-    //Create the cat sprite
+    let id = PIXI.loader.resources["img/animals.json"].textures;
+/*    //Create the cat sprite
     cat = new Sprite(resources["img/cat.png"].texture);
     cat.y = 96;
     cat.vx = 0;
     cat.vy = 0;
-    app.stage.addChild(cat);
+    app.stage.addChild(cat);*/
 
+    let cat = new Sprite(id["cat.png"]);
+    cat.position.set(16,16);
+
+    let hedgehog = new Sprite(id["hedgehog.png"]);
+    hedgehog.position.set(32,32);
+
+    let tiger = new Sprite(id["tiger.png"]);
+    tiger.position.set(64,64);
+    
+    animals.addChild(cat);
+    animals.addChild(hedgehog);
+    animals.addChild(tiger);
+
+    animals.position.set(64,64);
+
+    app.stage.addChild(animals);
+
+    /*
     //Capture the keyboard arrow keys
     let left = keyboard("ArrowLeft"),
         up = keyboard("ArrowUp"),
@@ -94,14 +113,15 @@ function setup() {
             console.log("key down released");
         }
     };
+    */
 
     //Set the game state
-    state = play;
+    //state = play;
 
     //Start the game loop
-    app.ticker.add(delta => gameLoop(delta));
+    //app.ticker.add(delta => gameLoop(delta));
 }
-
+/*
 function gameLoop(delta) {
     //Update the current game state
     state(delta);
@@ -112,7 +132,7 @@ function play(delta) {
     cat.x += cat.vx;
     cat.y += cat.vy;
 }
-
+*/
 function loadProgressHandler(loader, resource) {
     console.log("loading: " + resource.url);
     console.log("progress: " + loader.progress + "%");

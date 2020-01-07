@@ -45,8 +45,8 @@ _Quick observation:_ You're using VSCode for development, right? It's the same a
 - [x] Using velocity properties
 - [x] Game states
 - [x] Keyboard Movement
-- [ ] Grouping Sprites
-- [ ] Local and global positions
+- [x] Grouping Sprites
+- [x] Local and global positions
 - [ ] Using a ParticleContainer to group sprites
 - [ ] Pixi's Graphic Primitives
 - [ ] Rectangle
