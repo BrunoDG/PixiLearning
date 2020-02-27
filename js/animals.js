@@ -5,6 +5,8 @@ let Application = PIXI.Application,
     Sprite = PIXI.Sprite,
     state;
 
+let superFastSprites = new PIXI.particles.ParticleContainer(); 
+
 //Create a Pixi Application
 let app = new Application({
     width: 512,
@@ -34,6 +36,20 @@ function setup () {
 
     let tiger = new Sprite(id["tiger.png"]);
     tiger.position.set(64,64);
+
+    //create the ParticleContainer for faster sprites 
+    //let superFastSprites = new ParticleContainer(maxSize, properties, batchSize, autoResize);
+    /*
+    let superFastSprites = new ParticleContainer (
+        size,
+        {
+            rotation: true,
+            alphaAndtint: true,
+            scale: true,
+            uvs: true // UV Mapping property
+        }
+    );
+    */
 
     let animals = new PIXI.Container();
     animals.addChild(cat);
