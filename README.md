@@ -48,7 +48,7 @@ _Quick observation:_ You're using VSCode for development, right? It's the same a
 - [x] Grouping Sprites
 - [x] Local and global positions
 - [x] Using a ParticleContainer to group sprites
-- [ ] Pixi's Graphic Primitives
+- [x] Pixi's Graphic Primitives
     - [x] Rectangle
     - [x] Circles
     - [x] Ellipses
