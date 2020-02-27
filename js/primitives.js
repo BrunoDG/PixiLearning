@@ -69,3 +69,11 @@ roundBox.endFill();
 roundBox.x = 48;
 roundBox.y = 190;
 app.stage.addChild(roundBox);
+
+line.lineStyle(4, 0xffffff, 1);
+line.moveTo(0,0);
+line.lineTo(80, 50);
+line.x = 32;
+line.y = 32;
+app.stage.addChild(line);
+
