@@ -47,3 +47,10 @@ rectangle.endFill();
 rectangle.x = 170;
 rectangle.y = 170;
 app.stage.addChild(rectangle);
+
+circle.beginFill(0x9966FF);
+circle.drawCircle(0,0,32);
+circle.endFill();
+circle.x = 64;
+circle.y = 130;
+app.stage.addChild(circle);
