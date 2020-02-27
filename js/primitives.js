@@ -58,6 +58,14 @@ app.stage.addChild(circle);
 ellipse.beginFill(0xFFFF00);
 ellipse.drawEllipse(0, 0, 50, 20);
 ellipse.endFill();
-ellipse.x = 100;
+ellipse.x = 180;
 ellipse.y = 130;
 app.stage.addChild(ellipse);
+
+roundBox.lineStyle(4, 0x99CCFF, 1);
+roundBox.beginFill(0xff9933);
+roundBox.drawRoundedRect(0, 0, 84, 36, 10);
+roundBox.endFill();
+roundBox.x = 48;
+roundBox.y = 190;
+app.stage.addChild(roundBox);

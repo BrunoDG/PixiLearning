@@ -52,7 +52,7 @@ _Quick observation:_ You're using VSCode for development, right? It's the same a
     - [x] Rectangle
     - [x] Circles
     - [x] Ellipses
-    - [ ] Rounded rectangles
+    - [x] Rounded rectangles
     - [ ] Lines
     - [ ] Polygons
 - [ ] Displaying text
