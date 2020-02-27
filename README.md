@@ -50,8 +50,8 @@ _Quick observation:_ You're using VSCode for development, right? It's the same a
 - [x] Using a ParticleContainer to group sprites
 - [ ] Pixi's Graphic Primitives
     - [x] Rectangle
-    - [ ] Circles
-    - [ ] Ellipses
+    - [x] Circles
+    - [x] Ellipses
     - [ ] Rounded rectangles
     - [ ] Lines
     - [ ] Polygons

@@ -54,3 +54,10 @@ circle.endFill();
 circle.x = 64;
 circle.y = 130;
 app.stage.addChild(circle);
+
+ellipse.beginFill(0xFFFF00);
+ellipse.drawEllipse(0, 0, 50, 20);
+ellipse.endFill();
+ellipse.x = 100;
+ellipse.y = 130;
+app.stage.addChild(ellipse);
