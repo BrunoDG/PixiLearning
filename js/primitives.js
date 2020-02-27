@@ -77,3 +77,32 @@ line.x = 32;
 line.y = 32;
 app.stage.addChild(line);
 
+//To create a polygon, you have to use this function:
+/*
+let path = [
+    point1X, point1Y,
+    point2X, point2Y,
+    point3X, point3Y
+];
+
+graphicsObject.drawPolygon(path);
+*/
+triangle.beginFill(0x66ff33);
+//So, to create a triangle, we have two ways to draw him:
+// 1 - By passing the x and y of all vertices directly:
+/*triangle.drawPolygon([
+    -32, 64,
+    32, 64,
+    0, 0
+]);*/
+//2 - By creating a second variable with its x and y and passing through the drawPolygon function:
+let vertex = [
+    -32, 64,
+    32, 64,
+    0, 0
+];
+triangle.drawPolygon(vertex);
+triangle.endFill();
+triangle.x = 180;
+triangle.y = 22;
+app.stage.addChild(triangle);

@@ -54,7 +54,7 @@ _Quick observation:_ You're using VSCode for development, right? It's the same a
     - [x] Ellipses
     - [x] Rounded rectangles
     - [x] Lines
-    - [ ] Polygons
+    - [x] Polygons
 - [ ] Displaying text
 - [ ] Collision detection
 - [ ] The hitTestRectangle function
